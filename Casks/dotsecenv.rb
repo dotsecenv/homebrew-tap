@@ -3,7 +3,7 @@ cask "dotsecenv" do
   name "dotsecenv"
   desc "Safe environment secrets."
   homepage "https://dotsecenv.com"
-  version "0.0.7"
+  version "0.0.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -40,12 +40,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "e1ca4ef9c17432262a86ac39587417029556ca87a3126497a5f955412d47012b"
+      sha256 "8fea9d090ec9dd0a0535226b759d87368b69c8b4ef70d010a59fa84a71522351"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "556f107a250363b72c30d6e1b675a7870009d1915a21d3921148e71f8052983b"
+      sha256 "fefe065c2882b4ac29d130a383c108eff9187d1f527471e83b7b441797bdfe56"
     end
   end
 
@@ -53,17 +53,16 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "126fe9c4beab28d105832af377522c7b0e399d8dd1036cddef5dfb0e488c9917"
+      sha256 "64768df48b152421379000fe1abdc16fa5b47e7a94b281a43edd64ea106b7d34"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "1bfa759bf7554685c87b0716ba4682029ff9cf6566b0a51db409350829f2b81e"
+      sha256 "6ca130bd6cfcb391b4f75e63d209b751467e13f8c3d16195ae66a0b6e7de2f24"
     end
   end
 
   postflight do
-    system "#{staged_path}/dotsecenv"
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/dotsecenv"]
     end
