@@ -3,7 +3,7 @@ cask "dotsecenv" do
   name "dotsecenv"
   desc "Safe environment secrets."
   homepage "https://dotsecenv.com"
-  version "0.0.8"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -40,12 +40,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "8fea9d090ec9dd0a0535226b759d87368b69c8b4ef70d010a59fa84a71522351"
+      sha256 "903630a5e473e751798c5376a7e233a70c1dad931c76c67067a639d98d49a011"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "fefe065c2882b4ac29d130a383c108eff9187d1f527471e83b7b441797bdfe56"
+      sha256 "50736aa02fc9c7a66b482ab951f837b280ea3451a868f5913344a9ec86828c1c"
     end
   end
 
@@ -53,12 +53,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "64768df48b152421379000fe1abdc16fa5b47e7a94b281a43edd64ea106b7d34"
+      sha256 "80203a473a7b30a525ff2b1462b8f8db0529997c30f2b771f131f87ca66fe109"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "6ca130bd6cfcb391b4f75e63d209b751467e13f8c3d16195ae66a0b6e7de2f24"
+      sha256 "1d24926870f11355dba6cafaa48daa9a4fe166d81e37592710617c09778106d0"
     end
   end
 
@@ -71,6 +71,9 @@ cask "dotsecenv" do
   caveats do
     "For bash completions, install bash-completion:"
     "  brew install bash-completion@2"
+    ""
+    "To enable a shell plugin (automatic .env/.secenv loading), see:"
+    "  https://github.com/dotsecenv/plugin"
   end
 
   # No zap stanza required
