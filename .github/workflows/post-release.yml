@@ -1,0 +1,20 @@
+name: Post-Release Install Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-install:
+    name: Test Homebrew Installation
+    runs-on: macos-latest
+    steps:
+      - name: Tap dotsecenv/homebrew-tap
+        run: brew tap dotsecenv/tap
+
+      - name: Install dotsecenv
+        run: brew install dotsecenv
+
+      - name: Verify installation
+        run: dotsecenv version
