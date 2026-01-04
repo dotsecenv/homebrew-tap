@@ -1,4 +1,4 @@
-name: Post-Release Install Test
+name: Homebrew install
 
 on:
   push:

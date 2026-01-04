@@ -1,5 +1,7 @@
 # dotsecenv Homebrew Tap
 
+[![Homebrew install](https://github.com/dotsecenv/homebrew-tap/actions/workflows/post-release.yml/badge.svg)](https://github.com/dotsecenv/homebrew-tap/actions/workflows/post-release.yml)
+
 This is the official Homebrew tap for [dotsecenv](https://dotsecenv.com).
 
 ## Installation
