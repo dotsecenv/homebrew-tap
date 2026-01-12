@@ -3,7 +3,7 @@ cask "dotsecenv" do
   name "dotsecenv"
   desc "Safe environment secrets — encrypted at rest, ready to commit, easy to share."
   homepage "https://dotsecenv.com"
-  version "0.0.11"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -37,12 +37,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "8912f7733ba5eb2a6f57c377ef7daa417dec982aaa889b090dcab44375113501"
+      sha256 "b5f0e5caf638585d82a4df6ecc6e3b14171d96fa11dc8fe176580de621d3efdc"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "dcfebe7ec0f79b89e3a698516d55fcb180171c8fee19ab58d9db07df6db70c3d"
+      sha256 "f91c08c0bd45e4c9bf23101b4bebb1824e56d1c1cfca7ffb6034e3ba748df0e8"
     end
   end
 
@@ -50,12 +50,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "e690722188c83607485b729cb2e11e63bb9c2ad1345b19964ed94694894b5f08"
+      sha256 "4d19b446fd14c7c7d3ba6dfba6c625f2d2a29fec308577db325ef065037126e1"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "c0f41bc9088117e1f883a3ab09ec7a4c7aa94feeed1b64777ec576af27cd4bce"
+      sha256 "c9740999a0c83192dc6252c400a50cf9d34f8baab74882a44aa1c7863c94f93f"
     end
   end
 
