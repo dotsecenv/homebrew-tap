@@ -37,12 +37,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "1482df165c3da30cc35d6297702e7124bd64b7bffb08671127b631dde9386136"
+      sha256 "0c952231c392687a4d615565f7c7fecef6aaa3bb1ecc8986b8bb00c87e47062e"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "070bf5663c96bbe20b32c6335b2e4119e1fe9e3560650b16e4ae2e41e49457ac"
+      sha256 "95b6ff5ce303f82b6df198d569223f4e97f1cae7b556fd0012ad8d6479aaec88"
     end
   end
 
@@ -55,7 +55,7 @@ cask "dotsecenv" do
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "a06b43408cfaa46c787c45ed38fa1c0fd48b6ad6b796b66731e62baf468d5792"
+      sha256 "95b6ff5ce303f82b6df198d569223f4e97f1cae7b556fd0012ad8d6479aaec88"
     end
   end
 
