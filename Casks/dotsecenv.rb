@@ -18,7 +18,7 @@ cask "dotsecenv" do
   manpage "man/man1/dotsecenv-login.1"
   manpage "man/man1/dotsecenv-secret.1"
   manpage "man/man1/dotsecenv-secret-get.1"
-  manpage "man/man1/dotsecenv-secret-put.1"
+  manpage "man/man1/dotsecenv-secret-store.1"
   manpage "man/man1/dotsecenv-secret-revoke.1"
   manpage "man/man1/dotsecenv-secret-share.1"
   manpage "man/man1/dotsecenv-validate.1"
