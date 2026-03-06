@@ -3,29 +3,29 @@ cask "dotsecenv" do
   name "dotsecenv"
   desc "Safe environment secrets — encrypted at rest, ready to commit, easy to share."
   homepage "https://dotsecenv.com"
-  version "0.4.6"
+  version "0.4.7"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "dotsecenv"
-  manpage "man/man1/dotsecenv.1"
   manpage "man/man1/dotsecenv-completion.1"
-  manpage "man/man1/dotsecenv-init.1"
   manpage "man/man1/dotsecenv-init-config.1"
   manpage "man/man1/dotsecenv-init-vault.1"
+  manpage "man/man1/dotsecenv-init.1"
   manpage "man/man1/dotsecenv-login.1"
-  manpage "man/man1/dotsecenv-secret.1"
   manpage "man/man1/dotsecenv-secret-get.1"
-  manpage "man/man1/dotsecenv-secret-store.1"
   manpage "man/man1/dotsecenv-secret-revoke.1"
   manpage "man/man1/dotsecenv-secret-share.1"
+  manpage "man/man1/dotsecenv-secret-store.1"
+  manpage "man/man1/dotsecenv-secret.1"
   manpage "man/man1/dotsecenv-validate.1"
-  manpage "man/man1/dotsecenv-vault.1"
   manpage "man/man1/dotsecenv-vault-describe.1"
   manpage "man/man1/dotsecenv-vault-doctor.1"
+  manpage "man/man1/dotsecenv-vault.1"
   manpage "man/man1/dotsecenv-version.1"
+  manpage "man/man1/dotsecenv.1"
   bash_completion "completions/dotsecenv.bash"
   zsh_completion "completions/dotsecenv.zsh"
   fish_completion "completions/dotsecenv.fish"
@@ -37,12 +37,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "4bef143670037988945cd257ec6418ad7618301e0bed477a4e401cf599993053"
+      sha256 "8cefae3041ea731375e3351402f37a46cc792510f27fe977bcd580b5099ca8db"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "7618711ea3b6f2761e338006efcf2a77c7c29495e22d15176c1b6a9bee51f8eb"
+      sha256 "e4d6cb2ade479147e228b7e1b14dafefb93419de8fb243fede0091903c2e7a81"
     end
   end
 
@@ -50,12 +50,12 @@ cask "dotsecenv" do
     on_intel do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "0193f52efab8347492f4a92edc9f2c647a84c50710455b7fe8c52d6cd09bdba6"
+      sha256 "16d114da3957c63fb531cd1e775da433a20b6287b3f8f1cfe5cda60c8fc4bbea"
     end
     on_arm do
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
-      sha256 "7618711ea3b6f2761e338006efcf2a77c7c29495e22d15176c1b6a9bee51f8eb"
+      sha256 "1f6f93fbe0af5c5b0e5668007f03692d3b74f55f84478232b4ef6338c338c296"
     end
   end
 
