@@ -22,7 +22,7 @@ cask "dotsecenv" do
         verified: "github.com/dotsecenv/dotsecenv/"
     end
     on_arm do
-      sha256 "26a2be0a26f614672af159a3d24e52a369a59bd85d294553ca3b86b1888697e5"
+      sha256 "ea00f802c8948d789f818a16821d484ca0ea4edebc98f6d421b1440118a6e7e8"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
     end
