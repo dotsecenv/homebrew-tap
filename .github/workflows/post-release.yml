@@ -1,3 +1,8 @@
+# Source of truth: dotsecenv/dotsecenv at
+# homebrew-tap/.github/workflows/post-release.yml. The release pipeline
+# (update-homebrew-tap in dotsecenv/dotsecenv's release.yml) pushes this file to
+# dotsecenv/homebrew-tap on each release. Edit it in the monorepo, not in the tap
+# repo — direct edits there are overwritten on the next release.
 name: Homebrew install
 
 on:
