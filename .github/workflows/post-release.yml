@@ -13,6 +13,12 @@ jobs:
       - name: Tap dotsecenv/homebrew-tap
         run: brew tap dotsecenv/tap
 
+      # Newer Homebrew (HOMEBREW_REQUIRE_TAP_TRUST, on by default on GitHub's
+      # hardened runners) refuses to load a third-party tap's cask until it is
+      # trusted. Default end-user Homebrew doesn't require this; the runner does.
+      - name: Trust the dotsecenv/tap cask
+        run: brew trust --cask dotsecenv/tap/dotsecenv
+
       - name: Install dotsecenv
         run: brew install dotsecenv
 
