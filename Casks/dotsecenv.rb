@@ -5,16 +5,16 @@ cask "dotsecenv" do
   artifact "plugin/_dotsecenv_core.sh", target: "#{HOMEBREW_PREFIX}/share/dotsecenv/plugin/_dotsecenv_core.sh"
   artifact "plugin/conf.d/dotsecenv.fish", target: "#{HOMEBREW_PREFIX}/share/dotsecenv/plugin/conf.d/dotsecenv.fish"
 
-  version "0.8.0"
+  version "0.8.1"
 
   on_macos do
     on_intel do
-      sha256 "3f0c4f98d5a6c9dfc62c549a3b330dbeec57f842733d17ca308b30a976adce85"
+      sha256 "fb07ae029f903d4b82deeec49212dcc01d1e1f9e65cbe4d1badf5d8f657b6ac0"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
     end
     on_arm do
-      sha256 "4bcea7d7caf49267c778d8384eeff3838db181c48e6949c5f43c9c303c1634bd"
+      sha256 "7955822047d93d1536753c4c6f1110633959805b5112f464246beaec1ef85760"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
     end
@@ -22,12 +22,12 @@ cask "dotsecenv" do
 
   on_linux do
     on_intel do
-      sha256 "36b903cdec799f2f6c03656b1bad14a90565905da50b69acae9a93b39410db4b"
+      sha256 "c27ef673b43497912f49533e3a42131e55190e397febbadd4d2aaea5cb09e48a"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
     end
     on_arm do
-      sha256 "17880d28ead51e9f0399cb4b2113d0db5ab0ed22ce8b0a03c5e0781b5019925b"
+      sha256 "a66f4fdf16dd2d0fc6f196a5c357e3fd3f6bd9ba08a4fe536880e058fc57a50e"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/dotsecenv/dotsecenv/"
     end
