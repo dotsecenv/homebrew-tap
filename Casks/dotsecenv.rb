@@ -6,25 +6,25 @@ cask "dotsecenv" do
   artifact "plugin/_dotsecenv_core.sh", target: "#{HOMEBREW_PREFIX}/share/dotsecenv/plugin/_dotsecenv_core.sh"
   artifact "plugin/conf.d/dotsecenv.fish", target: "#{HOMEBREW_PREFIX}/share/dotsecenv/plugin/conf.d/dotsecenv.fish"
 
-  version "0.10.3"
+  version "0.11.0"
 
   on_macos do
     on_arm do
-      sha256 "ce7bcdb7c50b650c3c890c69a0f8d6abb75281bb97a61fedf5d363064b4ca3fe"
+      sha256 "569da1b47e05aa5e59b3aec77818c39038336c086856ae745f23abcd28aea482"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f8887fc1f3c8465f231ca8bfb90b8d184432cf6478660eadf9f184a314aaad69"
+      sha256 "c3b63f14114287a249d5becfc9645b13cd57ba957e0a9c2573926c8190c7821b"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "04d96d068db519a3ff9025242f3acd3cd76f054910e1d369c1a276229aad7c54"
+      sha256 "9847d72d935076006f41c8c1ebee7345df863313912401e0c7c4f54d70e2192b"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "471150738096be822a9eabe08ef4c5f005e83cd31edde89d2580c6a34545c6ca"
+      sha256 "128878f56739a8fb6bc5bcea61fb1809e69445bb2a8e27f4d19db26bf4073d5d"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz"
     end
   end
@@ -61,7 +61,7 @@ cask "dotsecenv" do
   zsh_completion "completions/dotsecenv.zsh"
   fish_completion "completions/dotsecenv.fish"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     For bash completions, install bash-completion:
