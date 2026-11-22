@@ -6,25 +6,25 @@ cask "dotsecenv" do
   artifact "plugin/_dotsecenv_core.sh", target: "#{HOMEBREW_PREFIX}/share/dotsecenv/plugin/_dotsecenv_core.sh"
   artifact "plugin/conf.d/dotsecenv.fish", target: "#{HOMEBREW_PREFIX}/share/dotsecenv/plugin/conf.d/dotsecenv.fish"
 
-  version "0.12.0"
+  version "0.13.0"
 
   on_macos do
     on_arm do
-      sha256 "88389d78fc9c5b7646a9b3bce3c6ad989f4958c1ebc5e46c32322704b1288514"
+      sha256 "5c7c79ed8095c936ab638a399339df075895c02ac6bbd699dbc65f4504ecf810"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "46957cc10c422c3d056cb4f10977236ea2998e3683e4ab15baff6aa083c1d79e"
+      sha256 "0413d71cf42da2e303972f06ede6a24c5ded946c6bf73eeb417b2d4be338164f"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "3d988ea93114db4f90acc3cf2e0c1a7e5a3d7041d4338e9c6027f736869052e4"
+      sha256 "f6535894204b2e5a5ffc2b872d3c949f71c55744c51d4b38728d1509324bc4d4"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0cb21521747149c877ba4b61d1ffb376c679c726df5cf89b07e3ad8c4587e5a4"
+      sha256 "9a63a2ed754c3978fd6194a20f37be0010129dad38e14c7feffc5086cf06c39a"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Linux_x86_64.tar.gz"
     end
   end
@@ -42,16 +42,26 @@ cask "dotsecenv" do
 
   binary "dotsecenv"
   manpage "man/man1/dotsecenv-completion.1"
+  manpage "man/man1/dotsecenv-doctor.1"
+  manpage "man/man1/dotsecenv-identity-add.1"
+  manpage "man/man1/dotsecenv-identity-create.1"
+  manpage "man/man1/dotsecenv-identity.1"
   manpage "man/man1/dotsecenv-init-config.1"
+  manpage "man/man1/dotsecenv-init-secenv.1"
   manpage "man/man1/dotsecenv-init-vault.1"
   manpage "man/man1/dotsecenv-init.1"
   manpage "man/man1/dotsecenv-login.1"
+  manpage "man/man1/dotsecenv-policy-list.1"
+  manpage "man/man1/dotsecenv-policy-validate.1"
+  manpage "man/man1/dotsecenv-policy.1"
+  manpage "man/man1/dotsecenv-secret-forget.1"
   manpage "man/man1/dotsecenv-secret-get.1"
   manpage "man/man1/dotsecenv-secret-revoke.1"
   manpage "man/man1/dotsecenv-secret-share.1"
   manpage "man/man1/dotsecenv-secret-store.1"
   manpage "man/man1/dotsecenv-secret.1"
   manpage "man/man1/dotsecenv-validate.1"
+  manpage "man/man1/dotsecenv-vault-compact.1"
   manpage "man/man1/dotsecenv-vault-describe.1"
   manpage "man/man1/dotsecenv-vault-doctor.1"
   manpage "man/man1/dotsecenv-vault.1"
