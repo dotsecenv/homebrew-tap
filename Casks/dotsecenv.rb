@@ -10,11 +10,11 @@ cask "dotsecenv" do
 
   on_macos do
     on_arm do
-      sha256 "5c7c79ed8095c936ab638a399339df075895c02ac6bbd699dbc65f4504ecf810"
+      sha256 "7e7a2aeaa6ac489869bfeb5430b7e892c9030e38026bfc98bb3bcb5348bf90a6"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0413d71cf42da2e303972f06ede6a24c5ded946c6bf73eeb417b2d4be338164f"
+      sha256 "253d0629d6973b7f8d99046d85739126ab8fd6b08ca5c2dbd70151d0d66ed333"
       url "https://github.com/dotsecenv/dotsecenv/releases/download/v#{version}/dotsecenv_#{version}_Darwin_x86_64.tar.gz"
     end
   end
